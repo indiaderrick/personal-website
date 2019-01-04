@@ -2,6 +2,13 @@
   display: flex;
   min-height: 700px;
 }
+.welcome-page-container .git-hub {
+  font-size: 20px;
+  position: absolute;
+  margin-left: 400px;
+  transform: rotate(-90deg);
+  top: 490px;
+}
 .welcome-page-container .projects {
   font-size: 30px;
   position: absolute;
@@ -15,11 +22,13 @@
 }
 .welcome-page-container .contact-me {
   width: 120px;
-  padding-top: 340px;
+  padding-top: 320px;
 }
 .welcome-page-container .contact-me p {
   transform: rotate(-90deg);
-  font-size: 17px;
+  font-size: 20px;
+  width: 200px;
+  margin-left: -60px;
 }
 @media (max-width: 42.125em) {
   .welcome-page-container .contact-me p {
@@ -27,7 +36,7 @@
   }
 }
 .welcome-page-container .scroll-icon {
-  height: 100px;
+  height: 200px;
   width: 80px;
   position: absolute;
   margin-left: 80px;
@@ -57,6 +66,10 @@
   padding-top: 20px;
   padding-left: 140px;
   font-size: 20px;
+}
+.welcome-page-container .welcome-page-square p a {
+  text-decoration: none;
+  color: black;
 }
 @media (max-width: 42.125em) {
   .welcome-page-container .welcome-page-square p {
