@@ -2,11 +2,18 @@ body {
   background-color: #FEFEFE;
   font-family: "didot", sans-serif;
   margin-top: 0;
+  height: 1500px;
 }
 
 .main-page-container {
   display: flex;
   min-height: 700px;
+}
+.main-page-container .projects {
+  font-size: 30px;
+  position: absolute;
+  top: 590px;
+  margin-left: 250px;
 }
 .main-page-container .contact-me {
   width: 120px;
@@ -17,17 +24,21 @@ body {
   font-size: 17px;
 }
 .main-page-container .scroll-icon {
-  height: 130px;
+  height: 100px;
   width: 80px;
   position: absolute;
-  right: 0;
-  bottom: 0;
+  margin-left: 80px;
+  top: 560px;
   background-color: #b9cfd3;
+  padding-top: 45px;
+}
+.main-page-container .scroll-icon p {
+  transform: rotate(-90deg);
 }
 .main-page-container .headshot-img {
   height: 400px;
   float: right;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 .main-page-container .welcome-page-square {
   background-color: #b9cfd3;
@@ -38,7 +49,7 @@ body {
 .main-page-container .welcome-page-square p {
   padding-top: 20px;
   padding-left: 140px;
-  font-size: 18px;
+  font-size: 20px;
 }
 .main-page-container .name-and-title .name {
   margin-left: -40px;
@@ -46,8 +57,16 @@ body {
   font-size: 40px;
 }
 .main-page-container .name-and-title .title {
-  margin-left: 15px;
+  margin-left: 65px;
   font-size: 30px;
+}
+
+.about-section .about-title {
+  font-size: 60px;
+  margin-left: 150px;
+}
+.about-section .about-para {
+  margin: 80px 180px 0 180px;
 }
 
 /*# sourceMappingURL=main.css.map */
