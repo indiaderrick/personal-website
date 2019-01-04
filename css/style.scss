@@ -2,4 +2,12 @@ $main-blue: #9DBBC1;
 $main-white: #FEFEFE;
 $main-font: 'didot', sans-serif;
 
+$tablet: 37.5em;
+
+@mixin tablet {
+   @media (max-width: #{$tablet}) {
+       @content;
+   }
+}
+
 @import  'partials/welcome'
