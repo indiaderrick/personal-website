@@ -1,0 +1,10 @@
+body{
+  background-color: $main-white;
+  font-family: $main-font;
+  margin-top: 0;
+  height: 1500px;
+  .title {
+    font-size: 60px;
+    margin-left: 150px;
+  }
+}

@@ -1,10 +1,4 @@
-body{
-  background-color: $main-white;
-  font-family: $main-font;
-  margin-top: 0;
-  height: 1500px;
-}
-.main-page-container {
+.welcome-page-container {
   display: flex;
   min-height: 700px;
   .projects{
@@ -12,6 +6,9 @@ body{
     position: absolute;
     top: 590px;
     margin-left: 250px;
+    @include tablet {
+      display: none;
+    }
   }
   .contact-me{
     width: 120px;
@@ -34,9 +31,6 @@ body{
     padding-top: 45px;
     p {
       transform: rotate(-90deg);
-      @include tablet {
-        display: none;
-      }
     }
   }
   .headshot-img{
@@ -48,7 +42,9 @@ body{
     background-color: lighten($main-blue, 9%);
     height: 600px;
     width: 50%;
-    z-index: -1;
+    @include tablet {
+      width: 120%;
+    }
     p {
       padding-top: 20px;
       padding-left: 140px;
@@ -63,29 +59,14 @@ body{
       margin-left: -40px;
       margin-top: 140px;
       font-size: 40px;
-
     }
     .title{
       margin-left: 65px;
       font-size: 30px;
-      letter-spacing: 6px;
+      letter-spacing: 8px;
       span {
         letter-spacing: 0;
       }
-      @include tablet {
-        display: none;
-      }
     }
-  }
-}
-
-.about-section{
-  .about-title {
-    font-size: 60px;
-    margin-left: 150px;
-  }
-  .about-para{
-    margin: 80px 180px 0 180px;
-    line-height: 35px;
   }
 }

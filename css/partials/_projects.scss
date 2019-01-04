@@ -1,0 +1,9 @@
+.projects-section{
+  min-height: 500px;
+  .project1{
+    background-color: lighten($main-blue, 20%);
+    width: 600px;
+    height: 200px;
+    margin-left: 200px;
+  }
+}
