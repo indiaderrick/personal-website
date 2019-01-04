@@ -1,6 +1,19 @@
 body {
-  background-color: #9DBBC1;
+  background-color: #FEFEFE;
   font-family: didot;
+  margin-top: 0;
+}
+body .main-page-container {
+  margin-left: 200px;
+  z-index: -1;
+}
+body .main-page-container .welcome-page-square {
+  background-color: #9DBBC1;
+  height: 500px;
+  width: 300px;
+}
+body .main-page-container .name-and-title h1 {
+  color: red;
 }
 
 /*# sourceMappingURL=main.css.map */
