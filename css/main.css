@@ -1,19 +1,53 @@
 body {
   background-color: #FEFEFE;
-  font-family: didot;
+  font-family: "didot", sans-serif;
   margin-top: 0;
 }
-body .main-page-container {
-  margin-left: 200px;
+
+.main-page-container {
+  display: flex;
+  min-height: 700px;
+}
+.main-page-container .contact-me {
+  width: 120px;
+  padding-top: 340px;
+}
+.main-page-container .contact-me p {
+  transform: rotate(-90deg);
+  font-size: 17px;
+}
+.main-page-container .scroll-icon {
+  height: 130px;
+  width: 80px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #b9cfd3;
+}
+.main-page-container .headshot-img {
+  height: 400px;
+  float: right;
+  margin-top: 60px;
+}
+.main-page-container .welcome-page-square {
+  background-color: #b9cfd3;
+  height: 600px;
+  width: 50%;
   z-index: -1;
 }
-body .main-page-container .welcome-page-square {
-  background-color: #9DBBC1;
-  height: 500px;
-  width: 300px;
+.main-page-container .welcome-page-square p {
+  padding-top: 20px;
+  padding-left: 140px;
+  font-size: 18px;
 }
-body .main-page-container .name-and-title h1 {
-  color: red;
+.main-page-container .name-and-title .name {
+  margin-left: -40px;
+  margin-top: 140px;
+  font-size: 40px;
+}
+.main-page-container .name-and-title .title {
+  margin-left: 15px;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

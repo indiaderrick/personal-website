@@ -2,18 +2,52 @@ body{
   background-color: $main-white;
   font-family: $main-font;
   margin-top: 0;
-  .main-page-container {
-    margin-left: 100px;
-    z-index: -1;
-    .welcome-page-square {
-      background-color: $main-blue;
-      height: 500px;
-      width: 300px;
+}
+
+.main-page-container {
+  display: flex;
+  min-height: 700px;
+  .contact-me{
+    width: 120px;
+    padding-top: 340px;
+    p {
+      transform: rotate(-90deg);
+      font-size: 17px;
     }
-    .name-and-title{
-      h1{
-        color: green;
-      }
+  }
+  .scroll-icon{
+    height: 130px;
+    width: 80px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: lighten($main-blue, 9%);
+  }
+  .headshot-img{
+    height: 400px;
+    float: right;
+    margin-top: 60px;
+  }
+  .welcome-page-square {
+    background-color: lighten($main-blue, 9%);
+    height: 600px;
+    width: 50%;
+    z-index: -1;
+    p {
+      padding-top: 20px;
+      padding-left: 140px;
+      font-size: 18px;
+    }
+  }
+  .name-and-title{
+    .name{
+      margin-left: -40px;
+      margin-top: 140px;
+      font-size: 40px;
+    }
+    .title{
+      margin-left: 15px;
+      font-size: 30px;
     }
   }
 }
