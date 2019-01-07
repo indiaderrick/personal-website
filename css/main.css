@@ -1,6 +1,15 @@
+@keyframes rotate-360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .welcome-page-container {
   display: flex;
-  min-height: 700px;
+  height: 100vh;
+  width: 100vw;
 }
 .welcome-page-container .git-hub {
   font-size: 20px;
@@ -17,6 +26,7 @@
 .welcome-page-container .projects {
   font-size: 30px;
   position: absolute;
+  z-index: 3;
   top: 590px;
   margin-left: 250px;
 }
@@ -41,19 +51,19 @@
   }
 }
 .welcome-page-container .scroll-icon {
-  height: 200px;
+  height: 180px;
   width: 80px;
   position: absolute;
   margin-left: 80px;
-  top: 560px;
-  background-color: #b9cfd3;
+  top: 80vh;
+  background-color: #A6BFB7;
   padding-top: 45px;
 }
 .welcome-page-container .scroll-icon p {
   transform: rotate(-90deg);
 }
 .welcome-page-container .headshot-img {
-  height: 400px;
+  height: 60vh;
   float: right;
   margin-top: 50px;
 }
@@ -63,8 +73,8 @@
   }
 }
 .welcome-page-container .welcome-page-square {
-  background-color: #b9cfd3;
-  height: 600px;
+  background-color: #A6BFB7;
+  height: 87vh;
   width: 50%;
 }
 @media (max-width: 710px) {
@@ -93,7 +103,7 @@
   }
 }
 .welcome-page-container .name-and-title .title {
-  margin-left: 65px;
+  margin-left: -50px;
   font-size: 30px;
   letter-spacing: 8px;
 }
@@ -114,25 +124,45 @@ body {
   background-color: #FEFEFE;
   font-family: "didot", sans-serif;
   margin-top: 0;
+  margin: 0;
   height: 1500px;
+}
+body .burger {
+  z-index: 1;
+  font-size: 30px;
+  right: 50px;
+  top: 30px;
+  position: fixed;
+}
+body .burger:hover {
+  animation-name: rotate-360;
+  animation-duration: 1s;
 }
 body a {
   text-decoration: none;
   color: black;
 }
 body .title {
-  font-size: 60px;
-  margin-left: 150px;
+  font-size: 70px;
+  padding-left: 150px;
 }
 
-.projects-section {
-  min-height: 500px;
+.projects-section .project-container p {
+  width: 50vw;
+  margin-left: 25%;
+}
+.projects-section .title {
+  text-shadow: 5px 2px #FEFEFE;
+  padding-top: 40px;
 }
 .projects-section .project1 {
-  background-color: #dbe6e9;
-  width: 600px;
-  height: 200px;
-  margin-left: 200px;
+  text-align: center;
+  vertical-align: middle;
+  width: 100vw;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=main.css.map */

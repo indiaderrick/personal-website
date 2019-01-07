@@ -10,7 +10,16 @@ $tablet: 710px;
    }
 }
 
+@keyframes rotate-360 {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);;}
+}
+
 @import  'partials/welcome';
 @import  'partials/about';
 @import  'partials/main';
 @import  'partials/projects';
+
+html {
+  scroll-behavior: smooth;
+}
