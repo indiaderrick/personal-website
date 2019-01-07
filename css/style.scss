@@ -2,7 +2,7 @@ $main-blue: #9DBBC1;
 $main-white: #FEFEFE;
 $main-font: 'didot', sans-serif;
 
-$tablet: 42.125em;
+$tablet: 710px;
 
 @mixin tablet {
    @media (max-width: #{$tablet}) {
