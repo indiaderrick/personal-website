@@ -10,10 +10,14 @@ body{
     right: 50px;
     top: 30px;
     position: fixed;
+    display: none;
   }
   .burger:hover{
     animation-name: rotate-360;
     animation-duration: 1s;
+  }
+  .burger-show{
+    display: inline;
   }
   a{
     text-decoration: none;
