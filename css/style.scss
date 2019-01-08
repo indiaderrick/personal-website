@@ -1,5 +1,7 @@
 $main-blue: #9DBBC1;
+$main-green: #A6BFB7;
 $main-white: #FEFEFE;
+$main-black: #252527;
 $main-font: 'didot', sans-serif;
 
 $tablet: 710px;
@@ -9,6 +11,7 @@ $tablet: 710px;
        @content;
    }
 }
+
 @keyframes rotate-360 {
   from {transform: rotate(0deg);}
   to {transform: rotate(360deg);;}
@@ -18,6 +21,8 @@ $tablet: 710px;
 @import  'partials/about';
 @import  'partials/main';
 @import  'partials/projects';
+@import  'partials/contact';
+@import  'partials/skills';
 
 html {
   scroll-behavior: smooth;

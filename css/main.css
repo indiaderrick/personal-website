@@ -112,21 +112,22 @@
 }
 
 .about-section .about-para {
-  margin: 80px 180px 0 180px;
+  margin: 80px 200px 0 200px;
   line-height: 35px;
 }
 
 body {
   background-color: #FEFEFE;
+  color: #252527;
+  font-weight: 100;
   font-family: "didot", sans-serif;
   margin-top: 0;
   margin: 0;
   height: 1500px;
 }
-body .burger {
+body .burger, body .nav-about {
+  right: 60px;
   z-index: 1;
-  font-size: 30px;
-  right: 50px;
   top: 30px;
   position: fixed;
   display: none;
@@ -147,13 +148,49 @@ body .title {
   padding-left: 150px;
 }
 
-.projects-section .project-container p {
+.projects-section {
+  background-color: #c4d4cf;
+  -webkit-clip-path: polygon(0 3%, 100% 1%, 100% 100%, 0 98%);
+  clip-path: polygon(0 3%, 100% 1%, 100% 100%, 0 98%);
+  padding-bottom: 100px;
+}
+.projects-section .project-container .technologies-text {
+  display: none;
+}
+.projects-section .project-container .white {
+  color: #FEFEFE;
+}
+.projects-section .project-container .description-text {
+  min-height: 200px;
+}
+.projects-section .project-container .show-technologies {
+  display: inline-block;
+  min-height: 200px;
+}
+.projects-section .project-container .hide-description {
+  display: none;
+}
+.projects-section .project-container fieldset {
   width: 50vw;
-  margin-left: 25%;
+  margin-left: 24%;
+  border: 2px solid #A6BFB7;
+  padding-bottom: 0;
+}
+.projects-section .project-container fieldset .box {
+  background-color: #A6BFB7;
+  display: inline-block;
+  padding-top: 5px;
+  height: 25px;
+  width: 30%;
+}
+.projects-section .project-container fieldset .box p {
+  margin: 0;
+}
+.projects-section .project-container fieldset .box p:hover {
+  color: #FEFEFE;
 }
 .projects-section .title {
-  text-shadow: 5px 2px #FEFEFE;
-  padding-top: 40px;
+  padding-top: 100px;
 }
 .projects-section .project1 {
   text-align: center;
@@ -164,6 +201,27 @@ body .title {
   color: #88aa9f;
   font-size: 60px;
   margin: 0;
+}
+
+.contact-section {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.contact-section .contact-title {
+  padding-left: 380px;
+}
+.contact-section .contact-detail {
+  display: inline-block;
+  padding: 20px;
+}
+
+.skills {
+  width: 100vw;
+  text-align: center;
+}
+.skills .icon {
+  padding: 10px;
+  font-size: 40px;
 }
 
 html {
