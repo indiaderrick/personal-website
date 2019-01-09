@@ -154,11 +154,14 @@ body .title {
   clip-path: polygon(0 3%, 100% 1%, 100% 100%, 0 98%);
   padding-bottom: 180px;
 }
+.projects-section .computer {
+  margin-bottom: -68px;
+}
 .projects-section .title {
   padding-top: 180px;
 }
 .projects-section .project-container {
-  margin-left: 8vw;
+  margin-left: 10vw;
   margin-top: 80px;
 }
 .projects-section .project-container fieldset {
@@ -241,10 +244,11 @@ body .title {
 .skills {
   width: 100vw;
   text-align: center;
+  line-height: 60px;
 }
 .skills .icon {
-  padding: 10px;
-  font-size: 40px;
+  padding: 45px;
+  font-size: 20px;
 }
 
 html {

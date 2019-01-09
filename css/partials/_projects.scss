@@ -3,11 +3,14 @@
   -webkit-clip-path: polygon(0 3%, 100% 1%, 100% 100%, 0 98%);
   clip-path: polygon(0 3%, 100% 1%, 100% 100%, 0 98%);
   padding-bottom: 180px;
+  .computer{
+    margin-bottom: -68px;
+  }
   .title{
     padding-top: 180px;
   }
   .project-container{
-    margin-left: 8vw;
+    margin-left: 10vw;
     margin-top: 80px;
     // position: relative;
     fieldset{
