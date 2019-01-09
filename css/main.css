@@ -156,6 +156,7 @@ body .title {
 }
 .projects-section .project-container .technologies-text {
   display: none;
+  color: white;
 }
 .projects-section .project-container .white {
   color: #FEFEFE;
