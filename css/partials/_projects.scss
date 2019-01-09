@@ -2,30 +2,56 @@
   background-color: lighten($main-green, 10%);
   -webkit-clip-path: polygon(0 3%, 100% 1%, 100% 100%, 0 98%);
   clip-path: polygon(0 3%, 100% 1%, 100% 100%, 0 98%);
-  padding-bottom: 100px;
+  padding-bottom: 180px;
+  .title{
+    padding-top: 180px;
+  }
   .project-container{
-    .technologies-text{
-      display: none;
-      color: white;
-    }
-    .white{
-      color: $main-white;
-    }
-    .description-text{
-      min-height: 200px;
-    }
-    .show-technologies{
-      display: inline-block;
-      min-height: 200px;
-    }
-    .hide-description{
-      display: none;
-    }
+    margin-left: 8vw;
+    margin-top: 80px;
+    // position: relative;
     fieldset{
-      width: 50vw;
-      margin-left: 24%;
+      .links{
+        display: inline;
+        .fa-link, .gitHubLogo{
+          font-size: 28px;
+          padding-left: 10px;
+        }
+        .fa-link:hover, .gitHubLogo:hover{
+          opacity: 0.6;
+        }
+      }
+      .technologies-text{
+        display: none;
+      }
+      .white{
+        color: $main-white;
+      }
+      .description-text, .technologies-text{
+        min-height: 200px;
+        line-height: 26px;
+        font-size: 14px;
+        .jumee{
+          text-decoration: underline;
+        }
+      }
+      .show-technologies{
+        display: block;
+        min-height: 200px;
+      }
+      .hide-description{
+        display: none;
+      }
+      text-align: center;
+      display: inline-block;
+      width: 40vw;
       border: 2px solid $main-green;
       padding-bottom: 0;
+      legend{
+        color: darken(#A6BFB7, 10%);
+        font-size: 60px;
+        margin: 0;
+      }
       .box{
         background-color: $main-green;
         display: inline-block;
@@ -39,19 +65,6 @@
           color: $main-white;
         }
       }
-    }
-  }
-  .title{
-    padding-top: 100px;
-  }
-  .project1{
-    text-align: center;
-    vertical-align: middle;
-    width: 100vw;
-    .number{
-      color: darken(#A6BFB7, 10%);
-      font-size: 60px;
-      margin: 0;
     }
   }
 }
