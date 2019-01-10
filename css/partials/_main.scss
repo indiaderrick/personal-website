@@ -2,10 +2,13 @@ body{
   background-color: $main-white;
   color: $main-black;
   font-weight: 100;
-  font-family: $main-font;
+  font-family: $main-font !important;
   margin-top: 0;
   margin: 0;
   height: 1500px;
+  li{
+    list-style: none;
+  }
   .burger, .nav-about{
     right: 60px;
     z-index: 1;
@@ -24,9 +27,8 @@ body{
     text-decoration: none;
     color: black;
   }
-  .title {
+  .titles {
     font-size: 70px;
     padding-left: 150px;
-
   }
 }

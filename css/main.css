@@ -95,19 +95,19 @@
 .welcome-page-container .name-and-title .name {
   margin-left: -40px;
   margin-top: 140px;
-  font-size: 40px;
+  font-size: 50px;
 }
 @media (max-width: 710px) {
   .welcome-page-container .name-and-title .name {
     margin-top: 197px;
   }
 }
-.welcome-page-container .name-and-title .title {
+.welcome-page-container .name-and-title .titles {
   margin-left: -50px;
   font-size: 30px;
   letter-spacing: 8px;
 }
-.welcome-page-container .name-and-title .title span {
+.welcome-page-container .name-and-title .titles span {
   letter-spacing: 0;
 }
 
@@ -120,10 +120,13 @@ body {
   background-color: #FEFEFE;
   color: #252527;
   font-weight: 100;
-  font-family: "didot", sans-serif;
+  font-family: "didot", sans-serif !important;
   margin-top: 0;
   margin: 0;
   height: 1500px;
+}
+body li {
+  list-style: none;
 }
 body .burger, body .nav-about {
   right: 60px;
@@ -143,13 +146,13 @@ body a {
   text-decoration: none;
   color: black;
 }
-body .title {
+body .titles {
   font-size: 70px;
   padding-left: 150px;
 }
 
 .projects-section {
-  background-color: #c4d4cf;
+  background-color: #bed0ca;
   -webkit-clip-path: polygon(0 3%, 100% 1%, 100% 100%, 0 98%);
   clip-path: polygon(0 3%, 100% 1%, 100% 100%, 0 98%);
   padding-bottom: 180px;
@@ -157,19 +160,19 @@ body .title {
 .projects-section .computer {
   margin-bottom: -68px;
 }
-.projects-section .title {
+.projects-section .titles {
   padding-top: 180px;
 }
 .projects-section .project-container {
   margin-left: 10vw;
-  margin-top: 80px;
+  margin-top: 90px;
 }
 .projects-section .project-container fieldset {
   text-align: center;
   display: inline-block;
   width: 40vw;
   border: 2px solid #A6BFB7;
-  padding-bottom: 0;
+  padding-bottom: 0px;
 }
 .projects-section .project-container fieldset .links {
   display: inline;
@@ -203,21 +206,21 @@ body .title {
   display: none;
 }
 .projects-section .project-container fieldset legend {
-  color: #88aa9f;
+  color: #7a9f93;
   font-size: 60px;
   margin: 0;
 }
-.projects-section .project-container fieldset .box {
+.projects-section .project-container fieldset .toggleBox {
   background-color: #A6BFB7;
   display: inline-block;
   padding-top: 5px;
   height: 25px;
   width: 30%;
 }
-.projects-section .project-container fieldset .box p {
+.projects-section .project-container fieldset .toggleBox p {
   margin: 0;
 }
-.projects-section .project-container fieldset .box p:hover {
+.projects-section .project-container fieldset .toggleBox p:hover {
   color: #FEFEFE;
 }
 
@@ -244,11 +247,19 @@ body .title {
 .skills {
   width: 100vw;
   text-align: center;
+  line-height: 120px;
+}
+.skills .methodology {
   line-height: 60px;
 }
 .skills .icon {
-  padding: 45px;
-  font-size: 20px;
+  padding: 40px 20px 40px 20px;
+  font-size: 16px;
+  border-radius: 5%;
+  margin: 10px;
+  width: 200px;
+  background-color: #f8f9fa;
+  border: 1px solid silver;
 }
 
 html {

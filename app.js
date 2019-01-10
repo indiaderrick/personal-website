@@ -5,6 +5,11 @@ window.onload = () => {
   const descriptionText = document.querySelectorAll('.description-text');
   const technologiesButton = document.querySelectorAll('.technologies-button');
   const descriptionButton = document.querySelectorAll('.description-button');
+  // const card = document.querySelectorAll('i');
+  //
+  // card.forEach(card => {
+  //   card.classList.add('card');
+  // })
 
   const welcomeInView = () => {
     const projectsInView = projects.getBoundingClientRect();

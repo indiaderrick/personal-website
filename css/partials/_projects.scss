@@ -1,17 +1,17 @@
 .projects-section{
-  background-color: lighten($main-green, 10%);
+  background-color: lighten($main-green, 8%);
   -webkit-clip-path: polygon(0 3%, 100% 1%, 100% 100%, 0 98%);
   clip-path: polygon(0 3%, 100% 1%, 100% 100%, 0 98%);
   padding-bottom: 180px;
   .computer{
     margin-bottom: -68px;
   }
-  .title{
+  .titles{
     padding-top: 180px;
   }
   .project-container{
     margin-left: 10vw;
-    margin-top: 80px;
+    margin-top: 90px;
     // position: relative;
     fieldset{
       .links{
@@ -49,13 +49,13 @@
       display: inline-block;
       width: 40vw;
       border: 2px solid $main-green;
-      padding-bottom: 0;
+      padding-bottom: 0px;
       legend{
-        color: darken(#A6BFB7, 10%);
+        color: darken(#A6BFB7, 15%);
         font-size: 60px;
         margin: 0;
       }
-      .box{
+      .toggleBox{
         background-color: $main-green;
         display: inline-block;
         padding-top: 5px;
