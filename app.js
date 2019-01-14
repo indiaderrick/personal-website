@@ -5,11 +5,8 @@ window.onload = () => {
   const descriptionText = document.querySelectorAll('.description-text');
   const technologiesButton = document.querySelectorAll('.technologies-button');
   const descriptionButton = document.querySelectorAll('.description-button');
-  // const card = document.querySelectorAll('i');
-  //
-  // card.forEach(card => {
-  //   card.classList.add('card');
-  // })
+  const titleElements = document.querySelectorAll('.about-section .titles');
+  const windowHeight = window.innerHeight;
 
   const welcomeInView = () => {
     const projectsInView = projects.getBoundingClientRect();
@@ -19,6 +16,33 @@ window.onload = () => {
       return false;
     }
   };
+
+  const animate = () => {
+    function init() {
+      addEventHandlers();
+      checkPosition();
+    }
+    function addEventHandlers() {
+      window.addEventListener('scroll', checkPosition);
+      window.addEventListener('resize', init);
+    }
+    function checkPosition() {
+      for (let i = 0; i < titleElements.length; i++) {
+        const fromTop = titleElements[i].getBoundingClientRect().top;
+        if (fromTop - windowHeight <= 0) {
+          titleElements[i].classList.add(
+            'titles-animate'
+          );
+        }
+      }
+    }
+    return {
+      init: init
+    };
+  };
+
+  animate().init();
+
 
   technologiesButton.forEach((button, i) => {
     button.addEventListener('click', () => {

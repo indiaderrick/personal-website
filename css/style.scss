@@ -17,6 +17,17 @@ $tablet: 710px;
   to {transform: rotate(360deg);;}
 }
 
+@keyframes underline{
+  from{
+    border-bottom: 1px solid black;
+    width: 0%;
+  }
+  to{
+    border-bottom: 1px solid black;
+    width: 25%;
+  }
+}
+
 @import  'partials/welcome';
 @import  'partials/about';
 @import  'partials/main';

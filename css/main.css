@@ -6,6 +6,16 @@
     transform: rotate(360deg);
   }
 }
+@keyframes underline {
+  from {
+    border-bottom: 1px solid black;
+    width: 0%;
+  }
+  to {
+    border-bottom: 1px solid black;
+    width: 25%;
+  }
+}
 .welcome-page-container {
   display: flex;
   height: 100vh;
@@ -114,6 +124,12 @@
 .about-section .about-para {
   margin: 80px 200px 0 200px;
   line-height: 35px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-section .about-para ul {
+  text-align: center;
+  margin-top: 50px;
 }
 
 body {
@@ -124,6 +140,11 @@ body {
   margin-top: 0;
   margin: 0;
   height: 1500px;
+}
+body .titles-animate {
+  animation-name: underline;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 body li {
   list-style: none;
@@ -239,6 +260,10 @@ body .titles {
 }
 .contact-section .contact-detail:hover a {
   color: #FEFEFE;
+}
+
+.cogs {
+  height: 100px;
 }
 
 .skills {
