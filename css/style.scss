@@ -21,10 +21,12 @@ $tablet: 710px;
   from{
     border-bottom: 1px solid black;
     width: 0%;
+    opacity: 0.4;
   }
   to{
     border-bottom: 1px solid black;
     width: 25%;
+    opacity: 1;
   }
 }
 

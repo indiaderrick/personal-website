@@ -13,6 +13,29 @@
     margin-left: 10vw;
     margin-top: 90px;
     fieldset{
+      text-align: center;
+      display: inline-block;
+      width: 40vw;
+      border: 2px solid $main-green;
+      padding-bottom: 0px;
+      legend{
+        color: darken(#A6BFB7, 15%);
+        font-size: 60px;
+        margin: 0;
+      }
+      .toggleBox{
+        background-color: $main-green;
+        display: inline-block;
+        padding-top: 5px;
+        height: 25px;
+        width: 30%;
+        p{
+          margin: 0;
+        }
+        p:hover{
+          color: $main-white;
+        }
+      }
       .links{
         display: inline;
         .fa-link, .gitHubLogo{
@@ -40,32 +63,6 @@
       .show-technologies{
         display: block;
         min-height: 220px;
-      }
-      // .hide-description{
-      //   display: none;
-      // }
-      text-align: center;
-      display: inline-block;
-      width: 40vw;
-      border: 2px solid $main-green;
-      padding-bottom: 0px;
-      legend{
-        color: darken(#A6BFB7, 15%);
-        font-size: 60px;
-        margin: 0;
-      }
-      .toggleBox{
-        background-color: $main-green;
-        display: inline-block;
-        padding-top: 5px;
-        height: 25px;
-        width: 30%;
-        p{
-          margin: 0;
-        }
-        p:hover{
-          color: $main-white;
-        }
       }
     }
   }
