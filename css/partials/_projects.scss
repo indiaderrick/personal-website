@@ -12,7 +12,6 @@
   .project-container{
     margin-left: 10vw;
     margin-top: 90px;
-    // position: relative;
     fieldset{
       .links{
         display: inline;
@@ -24,14 +23,14 @@
           opacity: 0.6;
         }
       }
-      .technologies-text{
+      .technologies-text, .hide-description{
         display: none;
       }
       .white{
         color: $main-white;
       }
       .description-text, .technologies-text{
-        min-height: 200px;
+        min-height: 220px;
         line-height: 26px;
         font-size: 14px;
         .jumee{
@@ -40,11 +39,11 @@
       }
       .show-technologies{
         display: block;
-        min-height: 200px;
+        min-height: 220px;
       }
-      .hide-description{
-        display: none;
-      }
+      // .hide-description{
+      //   display: none;
+      // }
       text-align: center;
       display: inline-block;
       width: 40vw;

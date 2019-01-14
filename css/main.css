@@ -94,7 +94,7 @@
 }
 .welcome-page-container .name-and-title .name {
   margin-left: -40px;
-  margin-top: 140px;
+  margin-top: 132px;
   font-size: 50px;
 }
 @media (max-width: 710px) {
@@ -184,14 +184,14 @@ body .titles {
 .projects-section .project-container fieldset .links .fa-link:hover, .projects-section .project-container fieldset .links .gitHubLogo:hover {
   opacity: 0.6;
 }
-.projects-section .project-container fieldset .technologies-text {
+.projects-section .project-container fieldset .technologies-text, .projects-section .project-container fieldset .hide-description {
   display: none;
 }
 .projects-section .project-container fieldset .white {
   color: #FEFEFE;
 }
 .projects-section .project-container fieldset .description-text, .projects-section .project-container fieldset .technologies-text {
-  min-height: 200px;
+  min-height: 220px;
   line-height: 26px;
   font-size: 14px;
 }
@@ -200,10 +200,7 @@ body .titles {
 }
 .projects-section .project-container fieldset .show-technologies {
   display: block;
-  min-height: 200px;
-}
-.projects-section .project-container fieldset .hide-description {
-  display: none;
+  min-height: 220px;
 }
 .projects-section .project-container fieldset legend {
   color: #7a9f93;
