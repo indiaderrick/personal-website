@@ -1,4 +1,5 @@
 window.onload = () => {
+
   const burger = document.querySelector('.burger');
   const projects = document.querySelector('.projects');
   const technologiesText = document.querySelectorAll('.technologies-text');
@@ -17,6 +18,14 @@ window.onload = () => {
     }
   };
 
+  window.addEventListener('scroll', () => {
+    if (welcomeInView()) {
+      burger.classList.remove('burger-show');
+    } else {
+      burger.classList.add('burger-show');
+    }
+  });
+
   const animate = () => {
     function init() {
       addEventHandlers();
@@ -30,9 +39,7 @@ window.onload = () => {
       for (let i = 0; i < titleElements.length; i++) {
         const fromTop = titleElements[i].getBoundingClientRect().top;
         if (fromTop - windowHeight <= 0) {
-          titleElements[i].classList.add(
-            'titles-animate'
-          );
+          titleElements[i].classList.add('titles-animate');
         }
       }
     }
@@ -40,9 +47,7 @@ window.onload = () => {
       init: init
     };
   };
-
   animate().init();
-
 
   technologiesButton.forEach((button, i) => {
     button.addEventListener('click', () => {
@@ -62,14 +67,5 @@ window.onload = () => {
       descriptionText[i].classList.remove('hide-description');
     });
   });
-
-  window.addEventListener('scroll', () => {
-    if (welcomeInView()) {
-      console.log('doesnt need navburger');
-      burger.classList.remove('burger-show');
-    } else {
-      console.log('needs navburger');
-      burger.classList.add('burger-show');
-    }
-  });
+  
 };
