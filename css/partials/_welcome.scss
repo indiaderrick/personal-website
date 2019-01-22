@@ -115,6 +115,7 @@
       @include mobile{
         margin-left: -180px;
         margin-top: 14vh;
+        font-size: 45px;
       }
     }
     .titles{
@@ -127,6 +128,7 @@
       @include mobile{
         margin-top: -2vh;
         margin-left: -54%;
+        font-size: 20px;
       }
     }
   }
