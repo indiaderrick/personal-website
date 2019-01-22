@@ -87,7 +87,7 @@
 }
 @media (max-width: 780px) {
   .welcome-page-container .headshot-img {
-    margin-top: 41vh;
+    margin-top: 45vh;
   }
 }
 .welcome-page-container .welcome-page-square {
@@ -95,6 +95,11 @@
   background-color: #A6BFB7;
   height: 87vh;
   width: 50%;
+}
+@media (max-width: 435px) {
+  .welcome-page-container .welcome-page-square {
+    background-color: #fefefe;
+  }
 }
 @media (max-width: 780px) {
   .welcome-page-container .welcome-page-square {
@@ -123,6 +128,12 @@
     margin-left: -26%;
   }
 }
+@media (max-width: 435px) {
+  .welcome-page-container .name-and-title .name {
+    margin-left: -180px;
+    margin-top: 8vh;
+  }
+}
 .welcome-page-container .name-and-title .titles {
   margin-left: -12%;
   font-size: 30px;
@@ -131,7 +142,19 @@
 .welcome-page-container .name-and-title .titles span {
   letter-spacing: 0;
 }
+@media (max-width: 435px) {
+  .welcome-page-container .name-and-title .titles {
+    margin-top: -2vh;
+    margin-left: -54%;
+  }
+}
 
+@media (max-width: 435px) {
+  .about-section .titles {
+    text-align: center;
+    margin: 56px 0 -10px 0;
+  }
+}
 .about-section .about-para {
   margin: 5% 15% 0 16%;
   line-height: 35px;
@@ -145,6 +168,7 @@
 @media (max-width: 780px) {
   .about-section .about-para ul {
     text-align: left;
+    margin-top: 20px;
   }
 }
 
@@ -213,6 +237,13 @@ body .titles {
 @media (max-width: 780px) {
   .projects-section .computer {
     max-width: 42vw;
+  }
+}
+@media (max-width: 435px) {
+  .projects-section .computer {
+    display: inline-block;
+    max-width: 80vw;
+    margin-bottom: 30px;
   }
 }
 .projects-section .titles {
@@ -285,6 +316,11 @@ body .titles {
     width: 35vw;
   }
 }
+@media (max-width: 435px) {
+  .projects-section .project-container fieldset {
+    width: 75vw;
+  }
+}
 @media (max-width: 780px) {
   .projects-section .project-container {
     margin-top: 80px;
@@ -335,7 +371,7 @@ body .titles {
   line-height: 60px;
 }
 .skills .icon {
-  padding: 3% 1.5% 3% 1.5%;
+  padding: 5% 1.5% 5% 1.5%;
   font-size: 1rem;
   border-radius: 5%;
   margin: 10px;
@@ -351,7 +387,8 @@ body .titles {
 }
 @media (max-width: 435px) {
   #skills-title {
-    padding-left: 120px;
+    text-align: center;
+    padding-left: 0px;
     animation-name: none;
   }
 }

@@ -1,4 +1,10 @@
 .about-section{
+  .titles{
+    @include mobile{
+      text-align: center;
+      margin: 56px 0 -10px 0;
+    }
+  }
   .about-para{
     margin: 5% 15% 0 16%;
     line-height: 35px;
@@ -9,6 +15,7 @@
       margin-top: 50px;
       @include tablet {
         text-align: left;
+        margin-top: 20px;
       }
     }
   }

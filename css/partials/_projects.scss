@@ -9,6 +9,11 @@
     @include tablet{
       max-width: 42vw;
     }
+    @include mobile {
+      display: inline-block;
+      max-width: 80vw;
+      margin-bottom: 30px;
+    }
   }
   .titles{
     padding-top: 180px;
@@ -76,6 +81,9 @@
       }
       @include tablet {
         width: 35vw;
+      }
+      @include mobile {
+        width: 75vw;
       }
     }
     @include tablet {
