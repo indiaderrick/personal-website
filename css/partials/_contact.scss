@@ -12,11 +12,15 @@
     padding: 10px 20px 10px 20px;
     border: 1px solid darken($main-green, 20%);
     border-radius: 5%;
+    @include mobile{
+      background-color: lighten($main-green, 10%)
+    }
   }
   .contact-detail:hover{
     background-color: lighten($main-green, 10%);
-    a{
-      color: $main-white;
-    }
+  }
+  a{
+    text-decoration: none;
+    color: $main-white;
   }
 }

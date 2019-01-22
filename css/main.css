@@ -18,6 +18,32 @@
     opacity: 1;
   }
 }
+.navbar {
+  display: none;
+}
+@media (max-width: 435px) {
+  .navbar {
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    background-color: #252527;
+    color: white;
+    height: 9vh;
+    width: 100vw;
+    text-align: center;
+    justify-content: space-around;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: #FEFEFE;
+  }
+  .navbar li {
+    display: inline;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 .welcome-page-container {
   display: flex;
   height: 100vh;
@@ -87,7 +113,7 @@
 }
 @media (max-width: 780px) {
   .welcome-page-container .headshot-img {
-    margin-top: 45vh;
+    margin-top: 46vh;
   }
 }
 .welcome-page-container .welcome-page-square {
@@ -131,7 +157,7 @@
 @media (max-width: 435px) {
   .welcome-page-container .name-and-title .name {
     margin-left: -180px;
-    margin-top: 8vh;
+    margin-top: 14vh;
   }
 }
 .welcome-page-container .name-and-title .titles {
@@ -147,6 +173,10 @@
     margin-top: -2vh;
     margin-left: -54%;
   }
+}
+.welcome-page-container a {
+  text-decoration: none;
+  color: black;
 }
 
 @media (max-width: 435px) {
@@ -205,10 +235,6 @@ body .burger:hover {
 body .burger-show {
   display: inline;
 }
-body a {
-  text-decoration: none;
-  color: black;
-}
 body .titles {
   font-size: 70px;
   padding-left: 150px;
@@ -248,6 +274,11 @@ body .titles {
 }
 .projects-section .titles {
   padding-top: 180px;
+}
+@media (max-width: 435px) {
+  .projects-section .titles {
+    text-align: center;
+  }
 }
 .projects-section .project-container {
   margin-left: 10vw;
@@ -336,6 +367,10 @@ body .titles {
     margin-top: 80px;
   }
 }
+.projects-section a {
+  text-decoration: none;
+  color: black;
+}
 
 .contact-section {
   margin-bottom: 50px;
@@ -355,10 +390,16 @@ body .titles {
   border: 1px solid #6b9487;
   border-radius: 5%;
 }
+@media (max-width: 435px) {
+  .contact-section .contact-detail {
+    background-color: #c4d4cf;
+  }
+}
 .contact-section .contact-detail:hover {
   background-color: #c4d4cf;
 }
-.contact-section .contact-detail:hover a {
+.contact-section a {
+  text-decoration: none;
   color: #FEFEFE;
 }
 

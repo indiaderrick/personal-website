@@ -17,6 +17,9 @@
   }
   .titles{
     padding-top: 180px;
+    @include mobile{
+      text-align: center;
+    }
   }
   .project-container{
     margin-left: 10vw;
@@ -99,5 +102,9 @@
     @include tablet {
       margin-top: 80px;
     }
+  }
+  a{
+    text-decoration: none;
+    color: black;
   }
 }
