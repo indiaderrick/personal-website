@@ -1,6 +1,3 @@
-.cogs{
-  height: 100px;
-}
 .skills{
   width: 100vw;
   text-align: center;
@@ -9,12 +6,21 @@
     line-height: 60px;
   }
   .icon {
-    padding: 40px 20px 40px 20px;
-    font-size: 16px;
+    padding: 3% 1.5% 3% 1.5%;
+    font-size: 1rem;
     border-radius: 5%;
     margin: 10px;
     width: 200px;
     background-color: #f8f9fa;
     border: 1px solid silver;
+  }
+}
+#skills-title{
+  @include tablet {
+    padding-left: 224px;
+  }
+  @include mobile {
+    padding-left: 120px;
+    animation-name: none;
   }
 }

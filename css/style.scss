@@ -4,10 +4,17 @@ $main-white: #FEFEFE;
 $main-black: #252527;
 $main-font: 'didot', sans-serif;
 
-$tablet: 710px;
+$tablet: 780px;
+$mobile: 435px;
 
 @mixin tablet {
    @media (max-width: #{$tablet}) {
+       @content;
+   }
+}
+
+@mixin mobile {
+   @media (max-width: #{$mobile}) {
        @content;
    }
 }

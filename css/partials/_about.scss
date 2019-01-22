@@ -1,12 +1,15 @@
 .about-section{
   .about-para{
-    margin: 80px 200px 0 200px;
+    margin: 5% 15% 0 16%;
     line-height: 35px;
     display: flex;
     flex-wrap: wrap;
     ul{
       text-align: center;
       margin-top: 50px;
+      @include tablet {
+        text-align: left;
+      }
     }
   }
 }

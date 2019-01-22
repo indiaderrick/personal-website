@@ -67,5 +67,5 @@ window.onload = () => {
       descriptionText[i].classList.remove('hide-description');
     });
   });
-  
+
 };

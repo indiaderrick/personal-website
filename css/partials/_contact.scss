@@ -2,7 +2,10 @@
   margin-bottom: 50px;
   text-align: center;
   .contact-title{
-    padding-left: 380px;
+    margin-left: 35%;
+    @include tablet {
+      margin-left: 0;
+    }
   }
   .contact-detail{
     display: inline-block;
