@@ -6,13 +6,16 @@
     line-height: 60px;
   }
   .icon {
-    padding: 5% 1.5% 5% 1.5%;
+    padding: 3% 1.5% 3% 1.5%;
     font-size: 1rem;
     border-radius: 5%;
     margin: 10px;
     width: 200px;
     background-color: #f8f9fa;
     border: 1px solid silver;
+    @include mobile{
+    padding: 5% 1.5% 5% 1.5%;
+    }
   }
 }
 #skills-title{

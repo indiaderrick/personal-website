@@ -9,6 +9,8 @@ window.onload = () => {
   const titleElements = document.querySelectorAll('.about-section .titles');
   const windowHeight = window.innerHeight;
 
+  // burger.style.display = 'none';
+
   const welcomeInView = () => {
     const projectsInView = projects.getBoundingClientRect();
     if(projectsInView.top >= 0 && projectsInView.bottom <= (window.innerHeight || document. documentElement.clientHeight)){

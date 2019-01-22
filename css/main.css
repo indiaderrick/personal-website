@@ -371,13 +371,18 @@ body .titles {
   line-height: 60px;
 }
 .skills .icon {
-  padding: 5% 1.5% 5% 1.5%;
+  padding: 3% 1.5% 3% 1.5%;
   font-size: 1rem;
   border-radius: 5%;
   margin: 10px;
   width: 200px;
   background-color: #f8f9fa;
   border: 1px solid silver;
+}
+@media (max-width: 435px) {
+  .skills .icon {
+    padding: 5% 1.5% 5% 1.5%;
+  }
 }
 
 @media (max-width: 780px) {
