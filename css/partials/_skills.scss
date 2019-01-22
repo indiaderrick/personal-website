@@ -2,6 +2,9 @@
   width: 100vw;
   text-align: center;
   line-height: 120px;
+  @include mobile {
+    line-height: 104px;
+  }
   .methodology{
     line-height: 60px;
   }

@@ -367,6 +367,11 @@ body .titles {
   text-align: center;
   line-height: 120px;
 }
+@media (max-width: 435px) {
+  .skills {
+    line-height: 104px;
+  }
+}
 .skills .methodology {
   line-height: 60px;
 }
