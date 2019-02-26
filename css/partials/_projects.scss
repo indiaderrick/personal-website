@@ -1,8 +1,8 @@
 .projects-section{
-  background-color: lighten($main-green, 8%);
-  -webkit-clip-path: polygon(0 3%, 100% 1%, 100% 100%, 0 98%);
-  clip-path: polygon(0 3%, 100% 1%, 100% 100%, 0 98%);
-  padding-bottom: 180px;
+  // background-color: lighten($main-green, 8%);
+  // -webkit-clip-path: polygon(0 3%, 100% 1%, 100% 100%, 0 98%);
+  // clip-path: polygon(0 3%, 100% 1%, 100% 100%, 0 98%);
+  padding-bottom: 120px;
   .computer{
     margin-bottom: -68px;
     max-width: 35vw;
@@ -16,7 +16,7 @@
     }
   }
   .titles{
-    padding-top: 180px;
+    padding-top: 50px;
     @include mobile{
       text-align: center;
     }
@@ -24,17 +24,19 @@
   .project-container{
     margin-left: 10vw;
     margin-top: 90px;
+
     fieldset{
       text-align: center;
       display: inline-block;
       width: 40vw;
-      border: 2px solid $main-green;
+      border: 2px solid white;
       padding-bottom: 0px;
       .info{
         display: inline-block;
       }
       legend{
-        color: darken(#A6BFB7, 15%);
+        // color: darken(#A6BFB7, 15%);
+        color: $main-black;
         font-size: 60px;
         margin: 0;
       }
@@ -107,4 +109,8 @@
     text-decoration: none;
     color: black;
   }
+}
+.shape{
+  height: 15vh;
+  background-color: $main-green;
 }

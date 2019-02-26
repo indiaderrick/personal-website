@@ -8,6 +8,11 @@ body{
   main{
     width: 100%;
   }
+  .fadeIn{
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-fill-mode:forwards;
+  }
   .titles-animate {
     animation-name: underline;
     animation-duration: 3s;

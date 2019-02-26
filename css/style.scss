@@ -1,14 +1,27 @@
 $main-blue: #9DBBC1;
-$main-green: #A6BFB7;
+$main-green: #c7d6bd;
 $main-white: #FEFEFE;
 $main-black: #252527;
 $main-font: 'didot', sans-serif;
 
 $tablet: 780px;
+$tablet-large: 1050px;
 $mobile: 435px;
+$mobile-small: 320px;
 
 @mixin tablet {
    @media (max-width: #{$tablet}) {
+       @content;
+   }
+}
+
+@mixin mobile-small {
+   @media (max-width: #{$mobile-small}) {
+       @content;
+   }
+}
+@mixin tablet-large {
+   @media (max-width: #{$tablet-large}) {
        @content;
    }
 }
@@ -33,6 +46,15 @@ $mobile: 435px;
   to{
     border-bottom: 1px solid black;
     width: 25%;
+    opacity: 1;
+  }
+}
+
+@keyframes fade{
+  from{
+    opacity: 0;
+  }
+  to{
     opacity: 1;
   }
 }

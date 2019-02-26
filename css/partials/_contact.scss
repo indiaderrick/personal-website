@@ -13,11 +13,11 @@
     border: 1px solid darken($main-green, 20%);
     border-radius: 5%;
     @include mobile{
-      background-color: lighten($main-green, 10%)
+      background-color: lighten($main-green, 2%);
     }
   }
   .contact-detail:hover{
-    background-color: lighten($main-green, 10%);
+    background-color: lighten($main-green, 2%);
   }
   a{
     text-decoration: none;

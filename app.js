@@ -7,7 +7,13 @@ window.onload = () => {
   const technologiesButton = document.querySelectorAll('.technologies-button');
   const descriptionButton = document.querySelectorAll('.description-button');
   const titleElements = document.querySelectorAll('.about-section .titles');
+  const projectsSection = document.querySelectorAll('.project-container');
   const windowHeight = window.innerHeight;
+
+  $('.name-and-role').animate({
+    'opacity': '1',
+    'margin-top': '-=105%'
+  }, 2000, 'linear');
 
   const welcomeInView = () => {
     const projectsInView = projects.getBoundingClientRect();
@@ -30,19 +36,30 @@ window.onload = () => {
     function init() {
       addEventHandlers();
       checkPosition();
+      // checkProjectPosition();
     }
     function addEventHandlers() {
       window.addEventListener('scroll', checkPosition);
+      // window.addEventListener('scroll', checkProjectPosition);
       window.addEventListener('resize', init);
     }
     function checkPosition() {
       for (let i = 0; i < titleElements.length; i++) {
         const fromTop = titleElements[i].getBoundingClientRect().top;
-        if (fromTop - windowHeight <= 0) {
+        if(fromTop - windowHeight <= 0) {
           titleElements[i].classList.add('titles-animate');
         }
       }
     }
+    // function checkProjectPosition(){
+    //   for (let i = 0; i < projectsSection.length; i++){
+    //     const fromTop = projectsSection[i].getBoundingClientRect().top;
+    //     if(fromTop - windowHeight <= 0) {
+    //       console.log('you made it to', projectsSection[i]);
+    //       projectsSection[i].classList.add('fadeIn');
+    //     }
+    //   }
+    // }
     return {
       init: init
     };

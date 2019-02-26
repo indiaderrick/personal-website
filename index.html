@@ -5,7 +5,7 @@
     <title>India Derrick</title>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <script src="./app.js" charset="utf-8"></script>
-    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+      <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -21,16 +21,40 @@
         </ul>
       </div>
       <div class="welcome-page-container" id="welcome">
-        <div class="contact-me"><p><a href="#contact"> ___ Contact Me</a></p></div>
+        <div class="left-shape">
+
+        </div>
+        <!-- <div class="contact-me"><p><a href="#contact"> ___ Contact Me</a></p></div> -->
+        <div class="mobile-intro">
+          <p>INDIA DERRICK</p>
+          <p class="mobile-title"><span>____ </span>Web</p>
+          <p class="mobile-title">Developer</p>
+        </div>
         <div class="welcome-page-square">
-          <p><a href="#about"> ___ ABOUT ME </a></p>
+          <p><a href="#contact"> ___ Contact Me </a></p>
           <img src="./images/indiaD.png" alt="me" class="headshot-img">
         </div>
-        <div class="name-and-title">
+        <div class="intro-headings">
+            <div class="laptop-navbar">
+              <ul>
+                <li><a href="#about">__ About Me</a> </li>
+                <li><a href="#projects">__ Projects</a></li>
+                <li><a href="https://github.com/indiaderrick" target="_blank">__ GitHub</a></li>
+              </ul>
+            </div>
+            <div class="name-and-role">
+              <p class="name">INDIA DERRICK</p>
+              <p class="titles" ><span>____ </span>Web</p>
+              <p class="titles two" >Developer</p>
+            </div>
+            <div class="quote">
+              <p>"As a developer I am excited by the prospect of using technology to tackle real world problems and better the lives of people around us."</p>
+            </div>
+        </div>
+        <!-- <div class="name-and-title">
           <p class="name">INDIA DERRICK</p>
           <p class="titles" ><span>____ </span>Web</p>
-          <p class="titles" >Developer.</p>
-          <div class="scroll-icon"></div>
+          <p class="titles" >Developer</p>
           <div class="projects">
             <p><a href="#projects">Projects ___</a></p>
           </div>
@@ -38,9 +62,11 @@
           <div class="git-hub">
             <p><a href="https://github.com/indiaderrick" target="_blank">___ Git Hub</a></p>
           </div>
-        </div>
+        </div> -->
+        <div class="scroll-icon"></div>
       </div>
     </head>
+
     <main>
       <section class="about-section" id="about">
         <p class="titles">about.</p>
@@ -69,7 +95,7 @@
       <section id="projects" class="projects-section">
         <p class="titles" id="projects">projects.</p>
             <div class="project-container">
-              <img src="./images/project4.png" alt="project4" class="computer" >
+              <a href="https://offTheRail.herokuapp.com/" target="blank"><img src="./images/project4.png" alt="project4" class="computer" ></a>
               <fieldset>
                 <legend>Off The Rail</legend>
                 <div class="links">
@@ -88,6 +114,7 @@
               </fieldset>
             </div>
             <div class="project-container">
+              <img src="./images/project3.png" alt="project4" class="computer" alt="">
               <fieldset>
                 <legend>xhibit</legend>
                 <div class="links">
@@ -105,7 +132,6 @@
                   <p>TECHNOLOGIES</p>
                 </div>
               </fieldset>
-              <img src="./images/project3.png" alt="project4" class="computer" alt="">
             </div>
             <div class="project-container">
               <img src="./images/project2.png" alt="project4" class="computer" >
@@ -127,11 +153,12 @@
               </fieldset>
             </div>
             <div class="project-container">
+              <img src="./images/project1.png" alt="project4" class="computer" >
               <fieldset>
                 <legend>Sliding Puzzles</legend>
                 <div class="links">
                   <a href="https://github.com/indiaderrick/wdi-project-one" target="blank"><img src="./images/gitHubSmall.png" alt="gitHubLogo" class=" gitHubLogo"></a>
-                  <a href="https://indiaderrick.github.io/wdi-project-one/" target="blank"><i class="fas fa-link"></i></a>
+                  <a href="https://indiaderrick.github.io/Sliding-Puzzles/" target="blank"><i class="fas fa-link"></i></a>
                   <p><strong>Duration: </strong> 1 week</p>
                 </div>
                 <p class="description-text">This is a simple JavaScript grid-based game. When the player starts the game, the pieces of the puzzle are randomly shuffled and the aim is to slide the puzzle back to its original state (easier that it sounds - have a go!). It was the first proper application that I had built, and although it was challenging at the time, it was the first time I had something to show for what I had learnt. This project gave me a real drive to continue on this steep learning curve. </p>
@@ -143,9 +170,9 @@
                   <p>TECHNOLOGIES</p>
                 </div>
               </fieldset>
-              <img src="./images/project1.png" alt="project4" class="computer" >
           </div>
       </section>
+      <!-- <div class="shape"></div> -->
       <section class="contact-section" id="contact">
         <p class="titles contact-title">contact.</p>
         <div class="contact-detail">
