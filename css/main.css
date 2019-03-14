@@ -349,6 +349,17 @@ body .titles {
 .projects-section {
   padding-bottom: 120px;
 }
+.projects-section .note {
+  font-size: 16px;
+  line-height: 30px;
+  max-width: 75vw;
+  margin-left: 12vw;
+}
+@media (max-width: 435px) {
+  .projects-section .note {
+    text-align: center;
+  }
+}
 .projects-section .computer {
   margin-bottom: -68px;
   max-width: 35vw;

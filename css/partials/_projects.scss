@@ -3,6 +3,15 @@
   // -webkit-clip-path: polygon(0 3%, 100% 1%, 100% 100%, 0 98%);
   // clip-path: polygon(0 3%, 100% 1%, 100% 100%, 0 98%);
   padding-bottom: 120px;
+  .note{
+    font-size: 16px;
+    line-height: 30px;
+    max-width: 75vw;
+    margin-left: 12vw;
+    @include mobile{
+      text-align: center;
+    }
+  }
   .computer{
     margin-bottom: -68px;
     max-width: 35vw;
