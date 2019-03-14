@@ -13,7 +13,10 @@ window.onload = () => {
   $('.name-and-role').animate({
     'opacity': '1',
     'margin-top': '-=105%'
-  }, 2000, 'linear');
+  }, 2500, 'linear');
+  $('.quote').animate({
+    'opacity': '1'
+  }, 2500, 'linear');
 
   const welcomeInView = () => {
     const projectsInView = projects.getBoundingClientRect();

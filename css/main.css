@@ -250,6 +250,7 @@
   }
 }
 .welcome-page-container .quote {
+  opacity: 0;
   width: 68%;
   line-height: 30px;
   margin-left: 5%;
